@@ -44,6 +44,7 @@ email.includes("@") &&
 (password.length > 10 || /[^A-Za-z0-9]/.test(password)) &&
 password === passwordRepeat
 ) {
+    sessionStorage.removeItem("name")
     sessionStorage.setItem(
         "name",
         name.charAt(0).toUpperCase() + name.slice(1)
@@ -53,7 +54,7 @@ alert(`Thankyou ${name} for registering. Directing you to the Home page`)
 
 setTimeout(() => {
 navigate("/");
-// window.location.reload();
+window.location.reload();
 return
 }, 500);
 }

@@ -39,6 +39,9 @@ body{
   padding: 0%;
 }
 .nav button{
+  color: #FE0810;
+}
+/* .nav button{
   height: 5vh;
   width: 11vh;
   border-radius: 20px;
@@ -46,7 +49,7 @@ body{
   background-color: #FE0810;
   color: white;
   cursor: pointer;
-}
+} */
 .kalvi{
   color: #FE0810;
   font-size: 5vh;

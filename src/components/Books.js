@@ -41,16 +41,15 @@ export default function Home() {
         <input className='searchdiv' type='search' id="search-box" onChange={(e)=>setList(e.target.value)} placeholder='  Search books here...' />
     <div className='books-container'>
       {search(data).map((books)=>{
-        if(booksdata.length>0){
             return <div>
                     <div className='book'>
                             <img src={books.book_image} alt="" />
                             <h3>{books.title}</h3>
                             <h4>by {books.author}</h4>
                         </div>
-            </div>}
-        else{return <div>not found</div>}
+            </div>
       })}
+    
     
     
     </div>
