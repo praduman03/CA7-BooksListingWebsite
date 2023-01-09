@@ -46,7 +46,7 @@ export default function Home() {
         onChange={(e) => setList(e.target.value)}
         placeholder="  Search books here..."
       />
-      <div style={{display : display}}>Book Not Found</div>
+      <div style={{display : display, padding:'15vh'}}><h3> Book Not Found </h3></div>
       <div className="books-container">
         {search(data).map((books) => {
           return (
